@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_tickets",
+  "info": {
+    "singularName": "book-ticket",
+    "pluralName": "book-tickets",
+    "displayName": "Book-Tickets",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "mobileNumber": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "numberOfTickets": {
+      "type": "integer",
+      "required": false
+    },
+    "travel_package": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::travel-package.travel-package",
+      "inversedBy": "book_tickets"
+    }
+  }
+}
