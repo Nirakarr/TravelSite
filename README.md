@@ -6,8 +6,7 @@ This repository contains two main applications:
 
 Frontend (travel-website-app): Built with Next.js to display travel packages and handle the booking process.
 Backend (travel-strapi-app): Built with Strapi CMS to manage travel packages, bookings, and authentication.
-bash
-Copy code
+
 ├── travel-webapp/      # Next.js frontend
 ├── travel-strapi-app/       # Strapi backend
 └── README.md                # Project documentation
@@ -17,13 +16,11 @@ Next.js: v14.2.8 (Frontend)
 Strapi: v4.25.10 (Backend CMS)
 Database: PostgreSQL
 Prerequisites
-Node.js: v20.15.1 or higher
+Node.js: v20.15.1 (LTS)
 Git: Required to clone the project
 PostgreSQL: Make sure PostgreSQL is installed and running
 Installation and Setup
 1. Clone the Repository
-bash
-Copy code
 git clone https://github.com/Nirakarr/TravelSite.git
 cd TravelSite
 2. Backend Setup (travel-strapi-app)
@@ -47,9 +44,8 @@ DATABASE_NAME=travel_practise_webapp
 DATABASE_USERNAME=postgres
 DATABASE_PASSWORD=password
 DATABASE_SSL=false
+
 Start the Strapi backend:
-bash
-Copy code
 npm run develop
 The backend will be running at http://localhost:1337/admin.
 
@@ -103,3 +99,4 @@ NEXT_PUBLIC_API_TOKEN=your_api_token_here
 Database
 The project uses PostgreSQL as the database for storing travel package and booking data.
 Ensure that your PostgreSQL server is running, and that the database configuration in .env is correct.
+
